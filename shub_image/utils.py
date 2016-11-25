@@ -12,7 +12,7 @@ from shub import exceptions as shub_exceptions
 
 DEFAULT_DOCKER_VERSION = '1.17'
 STATUS_FILE_LOCATION = '.releases'
-_VALIDSPIDERNAME = re.compile(b'^[a-z0-9][-._a-z0-9]+$', re.I)
+_VALIDSPIDERNAME = re.compile('^[a-z0-9][-._a-z0-9]+$', re.I)
 
 DOCKER_UNAVAILABLE_MSG = """
 Detected error connecting to Docker daemon's host.

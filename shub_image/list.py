@@ -2,6 +2,7 @@ import json
 
 import click
 import requests
+from six import binary_type
 from six.moves.urllib.parse import urljoin
 
 from shub import exceptions as shub_exceptions
@@ -76,7 +77,8 @@ def list_cmd(image_name, project, endpoint, apikey):
         raise shub_exceptions.ShubException(
             'Container with list cmd exited with code %s' % status_code)
 
-    spiders = utils.valid_spiders(logs)
+    spiders = utils.valid_spiders(
+        logs.decode('utf-8') if isinstance(logs, binary_type) else logs)
     return spiders
 
 
