@@ -1,6 +1,8 @@
-========================
-Scrapinghub release tool
-========================
+=====================================
+[DEPRECATED] Scrapinghub release tool
+=====================================
+
+[WARNING] This package is deprecated, please use `shub`_ (>=2.5.0) instead.
 
 Overview
 ========
@@ -24,3 +26,4 @@ Documentation
 
 You can find the documentation `here <https://shub-image.readthedocs.io/en/latest/>`_.
 
+.. _shub: https://github.com/scrapinghub/shub
