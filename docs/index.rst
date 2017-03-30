@@ -6,6 +6,8 @@
 Welcome to shub-image's documentation!
 ======================================
 
+.. include:: deprecation-warning.rst
+
 Contents:
 
 .. toctree::

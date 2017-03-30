@@ -4,6 +4,8 @@
 Custom Images contract
 ======================
 
+.. include:: deprecation-warning.rst
+
 A contract is a set of requirements that any crawler custom Docker image have to comply with to be able to run on Scrapy Cloud.
 
 Scrapy crawler Docker images are already supported via the :ref:`scrapinghub-entrypoint-scrapy <sh-entrypoint-scrapy>` contract implementation. If you want to run crawlers built using other framework/language than Scrapy/Python, you have to make sure your image follows the contract statements listed below.
